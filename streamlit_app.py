@@ -96,8 +96,9 @@ df = (df
 
 fig, ax = plt.subplots(figsize=(14, 6))
 df_box.plot(kind="line", ax=ax)
-
+ax.set_xlabel("Product")
 ax.set_ylabel("Price (€)")
+plt.xticks(rotation = 45, ha = "right")
 plt.tight_layout()
 
 st.pyplot(fig)
